@@ -19,4 +19,11 @@ describe("A suite of test for the demo function of the main class", function(){
 
         expect(result).toBe(2);
     })
+    it("fizzBuzz function should return fizz when given 3", function() {
+        let main = new Main();
+
+        let result = main.fizzByzz(3);
+
+        expect(result).toBe("fizz");
+    })
 });
