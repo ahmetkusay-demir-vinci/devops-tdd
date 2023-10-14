@@ -32,4 +32,9 @@ describe("A suite of test for the demo function of the main class", function(){
 
         expect(result).toBe("buzz");
     })
+    it("fizzBuzz function should return fizz when given 6", function() {
+        let result = main.fizzByzz(6);
+
+        expect(result).toBe("fizz");
+    })
 });
