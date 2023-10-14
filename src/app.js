@@ -1,12 +1,16 @@
 export class Main {
     fizzByzz(number) {
         if(this.isMultipleOfThree(number)) return "fizz";
-        if(number === 5 || number === 10) return "buzz";
+        if(this.isMultipleOfFive(number)) return "buzz";
          
         return number;
     }
 
     isMultipleOfThree(number) {
         return number % 3 === 0;
+    }
+
+    isMultipleOfFive(number) {
+        return number % 5 === 0;
     }
 }
